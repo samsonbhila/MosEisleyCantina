@@ -1,0 +1,157 @@
+2024-12-30T16:49:11.9436429Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 1 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:49:16.7630782Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:49:21.7580462Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:49:31.7615976Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:49:51.7560901Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:50:21.1453074Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 1 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:50:26.0446499Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:50:31.0326664Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:50:41.0326195Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:51:01.0334257Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:51:57.6223522Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 1 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:52:02.4507453Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:52:07.4496057Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:52:17.4482432Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:52:37.4482080Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:53:17.4484447Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:54:17.4498280Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:56:25.0504298Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 1 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:56:29.9400608Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:56:34.9393968Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:56:44.9397581Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:57:04.9410322Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:57:44.9400035Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:59:15.3827390Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 1 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:59:20.2730535Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()2024-12-30T16:59:25.2723167Z Serilog.Core.Sinks.Batching.BatchingSink: failed emitting a batch (Temporary, 50 events)
+System.InvalidOperationException: The given ColumnMapping does not match up with any column in the source or destination.
+   at Microsoft.Data.SqlClient.SqlBulkCopy.AnalyzeTargetAndCreateUpdateBulkCommand(BulkCopySimpleResultSet internalResults)
+   at Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServerInternalRestContinuedAsync(BulkCopySimpleResultSet internalResults, CancellationToken cts, TaskCompletionSource`1 source)
+--- End of stack trace from previous location ---
+   at Serilog.Sinks.MSSqlServer.Platform.SqlBulkBatchWriter.WriteBatch(IEnumerable`1 events)
+   at Serilog.Core.Sinks.Batching.BatchingSink.LoopAsync()

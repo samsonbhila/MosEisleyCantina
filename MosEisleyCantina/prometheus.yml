@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: 'mos_eisley_cantinaMetrix'
+    static_configs:
+      - targets: ['mos_eisley_app:8080']

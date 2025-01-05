@@ -1,0 +1,39 @@
+/* Styling for Status Column */
+main .recent-orders table tbody td:nth-child(4) {
+    text-align: center;
+}
+
+main .recent-orders table tbody td:nth-child(4) span {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 50px; /* Rounded box */
+    color: var(--color-white);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+main .recent-orders table tbody td:nth-child(4) span.pending {
+    background-color: skyblue;
+}
+
+main .recent-orders table tbody td:nth-child(4) span.declined {
+    background-color: red;
+}
+
+main .recent-orders table tbody td:nth-child(4) span.active {
+    background-color: darkyellow;
+}
+
+/* Styling for Action Column */
+main .recent-orders table tbody td:nth-child(5) button {
+    background: none;
+    border: none;
+    color: skyblue;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+main .recent-orders table tbody td:nth-child(5) button:hover {
+    color: darkblue; /* Slightly darker blue for hover */
+}

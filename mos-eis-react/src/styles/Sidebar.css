@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-primary: #6C9BCF;
+    --color-danger: #FF0060;
+    --color-white: #fff;
+    --color-light: rgba(132, 139, 200, 0.18);
+}
+
+aside {
+    height: 100vh;
+}
+
+aside .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside .toggle .logo {
+    display: flex;
+    gap: 0.5rem;
+}
+
+aside .toggle .logo img {
+    width: 2rem;
+    height: 2rem;
+}
+
+aside .toggle .close {
+    padding-right: 1rem;
+    display: none;
+}
+
+aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    height: 88vh;
+    position: relative;
+    top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+aside .sidebar a {
+    display: flex;
+    align-items: center;
+    color: var(--color-info-dark);
+    height: 3.7rem;
+    gap: 1rem;
+    position: relative;
+    margin-left: 2rem;
+    transition: all 0.3s ease;
+}
+
+aside .sidebar a.active {
+    width: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    margin-left: 0;
+}
+
+aside .sidebar a:hover {
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        position: fixed;
+        background-color: var(--color-white);
+        width: 15rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--color-light);
+        height: 100vh;
+        left: -100%;
+        display: none;
+        animation: showMenu 0.4s ease forwards;
+    }
+
+    @keyframes showMenu {
+        to {
+            left: 0;
+        }
+    }
+
+    aside .toggle .close {
+        display: inline-block;
+        cursor: pointer;
+    }
+}
