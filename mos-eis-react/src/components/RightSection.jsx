@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "../styles/style.css";
 import "../styles/RightSection.css";
-import { getReviews } from "../services/apiService"; // Assuming you have the API function to fetch reviews
-import {jwtDecode} from "jwt-decode"; // Import jwt-decode to decode the JWT token
+import { getReviews } from "../services/apiService"; 
+import {jwtDecode} from "jwt-decode"; 
 
 const RightSection = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [reviews, setReviews] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [userName, setUserName] = useState(""); // State for the logged-in user's name
+  const [userName, setUserName] = useState(""); 
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -16,29 +16,27 @@ const RightSection = () => {
   };
 
   useEffect(() => {
-    // Get the JWT token from localStorage
-    const token = localStorage.getItem("authToken"); // Assuming the token is stored as "authToken"
+    const token = localStorage.getItem("authToken"); 
     if (token) {
       try {
-        const decodedToken = jwtDecode(token); // Decode the token to extract user information
-        const loggedInUser = decodedToken.userName; // Replace with the correct property from your token
-        setUserName(loggedInUser); // Set the user's name
+        const decodedToken = jwtDecode(token); 
+        const loggedInUser = decodedToken.userName; 
+        setUserName(loggedInUser); 
       } catch (error) {
         console.error("Invalid token:", error);
       }
     }
 
-    // Fetch reviews from the API
     getReviews()
       .then((data) => {
-        setReviews(data); // Set the reviews
-        setLoading(false); // Stop loading when reviews are fetched
+        setReviews(data); 
+        setLoading(false); 
       })
       .catch((err) => {
         console.error("Error fetching reviews:", err);
         setLoading(false);
       });
-  }, []); // Empty dependency array to run once on mount
+  }, []);
 
   const renderStars = (rating) => {
     let stars = [];
@@ -76,7 +74,7 @@ const RightSection = () => {
         <div className="profile">
           <div className="info">
             <p>
-              Hey, <b>{userName || "Guest"}</b> {/* Display the logged-in user's name */}
+              Hey, <b>{userName || "Guest"}</b> 
             </p>
             <small className="text-muted">Admin</small>
           </div>

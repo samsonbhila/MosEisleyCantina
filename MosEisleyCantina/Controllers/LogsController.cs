@@ -24,7 +24,7 @@ namespace MosEisleyCantina.Controllers
             _memoryCache = memoryCache;
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         [HttpGet("all")]
         public async Task<IActionResult> GetAllLogs(int page = 1, int pageSize = 100)
         {
@@ -70,7 +70,7 @@ namespace MosEisleyCantina.Controllers
             }
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         [HttpGet]
         public async Task<IActionResult> GetLogs([FromQuery] LogSearchRequest request)
         {
@@ -94,7 +94,7 @@ namespace MosEisleyCantina.Controllers
             return Ok(logs);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         [HttpGet("time-frame")]
         public async Task<IActionResult> GetLogsByTimeFrame([FromQuery] string timeFrame, [FromQuery] string searchTerm)
         {

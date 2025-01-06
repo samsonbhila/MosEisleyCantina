@@ -9,32 +9,27 @@ const apiClient = axios.create({
   },
 });
 
-// Login request
 export const loginUser = async (data) => {
   try {
     const response = await apiClient.post("/Auth/login", data);
-    
-    // Log the full response to ensure it's correct
     console.log("API response:", response);
 
     // Store the token in localStorage
-    localStorage.setItem("authToken", response.data.token);  // Assuming the token is in response.data.token
+    localStorage.setItem("authToken", response.data.token);  
 
-    // Return the response object (optional)
     return response;
   } catch (error) {
     console.error("Login error:", error);
-    throw error;  // Throw the error so it can be handled in the component
+    throw error;  
   }
 };
 
-// Register request
+
 export const registerUser = async (data) => {
   try {
     const response = await apiClient.post("/Auth/register", data);
-    return response.data; // Return response data (e.g., success message)
+    return response.data; 
   } catch (error) {
-    // Handle any error that occurred
     if (error.response) {
       console.error("Error response:", error.response);
       throw new Error(`Registration failed: ${error.response.data.message || error.response.statusText}`);
@@ -51,14 +46,12 @@ export const registerUser = async (data) => {
 // Fetch Reviews
 export const getReviews = async () => {
   try {
-    // Retrieve the token from localStorage
     const token = localStorage.getItem("authToken");
 
     if (!token) {
       throw new Error("No authentication token found. Please log in.");
     }
 
-    // Set the Authorization header with the token
     const response = await apiClient.get("/reviews", {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -69,12 +62,11 @@ export const getReviews = async () => {
     return response.data;
   } catch (error) {
     console.error("Error fetching reviews:", error);
-    throw error;  // Throw the error so it can be handled in the component
+    throw error;  
   }
 };
 
-// Logout request (removes token from localStorage)
+
 export const logoutUser = () => {
-  // Remove the token from localStorage
   localStorage.removeItem("authToken");
 };

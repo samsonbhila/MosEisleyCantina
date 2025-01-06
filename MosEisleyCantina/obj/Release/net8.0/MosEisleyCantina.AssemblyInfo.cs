@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("6d1c6208-52b7-4dcc-a5d3-17c113a502c1")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("MosEisleyCantina")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1db6eefaaaf82a3b3ac44b816a0b8acc219468f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MosEisleyCantina")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MosEisleyCantina")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

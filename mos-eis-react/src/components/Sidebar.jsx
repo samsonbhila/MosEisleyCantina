@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/style.css"; // Adjust the path as needed for your CSS file
+import "../styles/style.css"; 
 
 const Sidebar = () => {
   return (

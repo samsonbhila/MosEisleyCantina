@@ -18,7 +18,7 @@ namespace MosEisleyCantinaAPI.Controllers
             _dishService = dishService;
         }
 
-        [Authorize(Roles = "Admin,User")]
+        [Authorize(Roles = "admin,user")]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -26,7 +26,7 @@ namespace MosEisleyCantinaAPI.Controllers
             return Ok(dishes);
         }
 
-        [Authorize(Roles = "Admin,User")]
+        [Authorize(Roles = "admin,user")]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -34,7 +34,7 @@ namespace MosEisleyCantinaAPI.Controllers
             return Ok(dish);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] DishDTO dish)
         {
@@ -42,7 +42,7 @@ namespace MosEisleyCantinaAPI.Controllers
             return CreatedAtAction(nameof(GetById), new { id = dish.Name }, dish);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] DishDTO dish)
         {
@@ -50,7 +50,7 @@ namespace MosEisleyCantinaAPI.Controllers
             return Ok(new { Message = "Dish was updated successfully." });
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -58,7 +58,7 @@ namespace MosEisleyCantinaAPI.Controllers
             return Ok(new { Message = "Dish was deleted successfully." });
         }
 
-        [Authorize(Roles = "User")]
+        [Authorize(Roles = "user")]
         [HttpGet("search")]
         public async Task<IActionResult> Search([FromQuery] string query)
         {
@@ -66,7 +66,7 @@ namespace MosEisleyCantinaAPI.Controllers
             return Ok(results);
         }
 
-        [Authorize(Roles = "Admin,User")]
+        [Authorize(Roles = "admin,user")]
         [HttpPost("{dishId}/rate")]
         public async Task<IActionResult> RateDish(int dishId, [FromBody] RateItemDTO model)
         {
@@ -79,7 +79,7 @@ namespace MosEisleyCantinaAPI.Controllers
             return Ok(new { Message = "Rating added successfully." });
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         [HttpGet("{dishId}/rating")]
         public async Task<IActionResult> GetDishRating(int dishId)
         {

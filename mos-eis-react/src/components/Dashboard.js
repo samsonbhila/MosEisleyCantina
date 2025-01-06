@@ -5,33 +5,30 @@ import RightSection from "./RightSection";
 import "../styles/Dashboard.css";
 
 const Dashboard = () => {
-  // Global states
   const [sideMenuVisible, setSideMenuVisible] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
-  // Sample data (can come from an API in the future)
   const orders = [
     {
-      productName: "Product 1",
+      productName: "Sprite",
       productNumber: "001",
       paymentStatus: "Paid",
       status: "Approved",
     },
     {
-      productName: "Product 2",
+      productName: "Coke",
       productNumber: "002",
       paymentStatus: "Unpaid",
       status: "Pending",
     },
     {
-      productName: "Product 3",
+      productName: "Pepsi",
       productNumber: "003",
       paymentStatus: "Refunded",
       status: "Declined",
     },
   ];
 
-  // Handlers
   const toggleSideMenu = () => setSideMenuVisible(!sideMenuVisible);
   const toggleDarkMode = () => setDarkMode(!darkMode);
 

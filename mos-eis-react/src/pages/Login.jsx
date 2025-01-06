@@ -14,7 +14,6 @@ const Login = () => {
 
   const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:8080";
 
-  // Handle regular login with email and password
   const handleLogin = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -33,19 +32,16 @@ const Login = () => {
     }
   };
 
-  // Process the token received (JWT token)
   const handleTokenProcessing = (token, isGoogleLogin = false) => {
     try {
       const decodedToken = jwtDecode(token);
 
       if (isGoogleLogin) {
-        // Skip role check for Google users and redirect them to the dashboard
         localStorage.setItem("token", token);
         setModalContent({ title: "Success", message: "Login successful! Redirecting..." });
         setModalOpen(true);
         setTimeout(() => (window.location.href = "/dashboard"), 2000);
       } else {
-        // Handle regular login with role-based access control
         const role = decodedToken["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
         localStorage.setItem("token", token);
         localStorage.setItem("role", role);
@@ -69,7 +65,6 @@ const Login = () => {
     }
   };
 
-  // Handle Google Login Success
   const handleGoogleSuccess = async (credentialResponse) => {
     setLoading(true);
     console.log("Credential Response:", credentialResponse);
@@ -105,7 +100,6 @@ const Login = () => {
     }
   };
 
-  // Handle Google Login Failure
   const handleGoogleFailure = () => {
     setModalContent({ title: "Error", message: "Google login failed." });
     setModalOpen(true);

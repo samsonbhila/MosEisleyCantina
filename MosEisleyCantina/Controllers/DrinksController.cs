@@ -18,7 +18,7 @@ namespace MosEisleyCantinaAPI.Controllers
             _drinkService = drinkService;
         }
 
-        [Authorize(Roles = "Admin,User")]
+        [Authorize(Roles = "admin,user")]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -26,7 +26,7 @@ namespace MosEisleyCantinaAPI.Controllers
             return Ok(drinks);
         }
 
-        [Authorize(Roles = "Admin,User")]
+        [Authorize(Roles = "admin,user")]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -34,7 +34,7 @@ namespace MosEisleyCantinaAPI.Controllers
             return Ok(drink);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] DrinkDTO drink)
         {
@@ -42,7 +42,7 @@ namespace MosEisleyCantinaAPI.Controllers
             return CreatedAtAction(nameof(GetById), new { id = drink.Name }, drink);
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] DrinkDTO drink)
         {
@@ -50,7 +50,7 @@ namespace MosEisleyCantinaAPI.Controllers
             return Ok(new { Message = "Drink was updated successfully." });
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -58,7 +58,7 @@ namespace MosEisleyCantinaAPI.Controllers
             return Ok(new { Message = "Drink was deleted successfully." });
         }
 
-        [Authorize(Roles = "User")]
+        [Authorize(Roles = "user")]
         [HttpGet("search")]
         public async Task<IActionResult> Search([FromQuery] string query)
         {
@@ -66,7 +66,7 @@ namespace MosEisleyCantinaAPI.Controllers
             return Ok(results);
         }
 
-        [Authorize(Roles = "User")]
+        [Authorize(Roles = "user")]
 
         [HttpPost("{drinkId}/rate")]
         public async Task<IActionResult> RateDrink(int drinkId, [FromBody] RateItemDTO model)
@@ -80,7 +80,7 @@ namespace MosEisleyCantinaAPI.Controllers
             return Ok(new { Message = "Rating added successfully." });
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         [HttpGet("{drinkId}/rating")]
         public async Task<IActionResult> GetDrinkRating(int drinkId)
         {

@@ -23,7 +23,7 @@ namespace MosEisleyCantinaAPI.Controllers
             _logger = logger;
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -41,7 +41,7 @@ namespace MosEisleyCantinaAPI.Controllers
             }
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "admin")]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -64,7 +64,7 @@ namespace MosEisleyCantinaAPI.Controllers
             }
         }
 
-        [Authorize(Roles = "Admin,User")]
+        [Authorize(Roles = "admin,user")]
         [HttpPost]
         public async Task<IActionResult> Add(string content, int rating)
         {
