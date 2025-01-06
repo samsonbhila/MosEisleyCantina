@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Eo76ISkv3MQ=",
+  "dgSpecHash": "D18tTw1wJNA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\pauli\\source\\MosEisleyCantina\\MosEisleyCantina\\MosEisleyCantina.csproj",
+  "projectFilePath": "C:\\Users\\pauli\\Videos\\MosEisleyCantina\\MosEisleyCantina\\MosEisleyCantina.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pauli\\.nuget\\packages\\aspnetcoreratelimit\\5.0.0\\aspnetcoreratelimit.5.0.0.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",

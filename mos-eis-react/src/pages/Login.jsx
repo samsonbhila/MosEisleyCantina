@@ -50,7 +50,7 @@ const Login = () => {
         localStorage.setItem("token", token);
         localStorage.setItem("role", role);
 
-        if (role === "Admin") {
+        if (role.toLowerCase() === "admin".toLowerCase()) {
           setModalContent({ title: "Success", message: "Login successful! Redirecting..." });
           setModalOpen(true);
           setTimeout(() => (window.location.href = "/dashboard"), 2000);
