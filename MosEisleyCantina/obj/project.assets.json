@@ -13281,11 +13281,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pauli\\OneDrive\\Pictures\\MosEisleyCantina\\MosEisleyCantina\\MosEisleyCantina.csproj",
+      "projectUniqueName": "C:\\Users\\pauli\\Videos\\testing\\MosEisleyCantina\\MosEisleyCantina\\MosEisleyCantina.csproj",
       "projectName": "MosEisleyCantina",
-      "projectPath": "C:\\Users\\pauli\\OneDrive\\Pictures\\MosEisleyCantina\\MosEisleyCantina\\MosEisleyCantina.csproj",
+      "projectPath": "C:\\Users\\pauli\\Videos\\testing\\MosEisleyCantina\\MosEisleyCantina\\MosEisleyCantina.csproj",
       "packagesPath": "C:\\Users\\pauli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pauli\\OneDrive\\Pictures\\MosEisleyCantina\\MosEisleyCantina\\obj\\",
+      "outputPath": "C:\\Users\\pauli\\Videos\\testing\\MosEisleyCantina\\MosEisleyCantina\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

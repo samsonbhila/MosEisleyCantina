@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MosEisleyCantina")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1db6eefaaaf82a3b3ac44b816a0b8acc219468f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dab9283defa880098f81fe9d5030c9f33995f4ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("MosEisleyCantina")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MosEisleyCantina")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
